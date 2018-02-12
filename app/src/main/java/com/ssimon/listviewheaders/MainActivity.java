@@ -33,9 +33,8 @@ public class MainActivity extends ListActivity {
 
         private List<Class<?>> getViewTypes(List<Item> items) {
             Set<Class<?>> set = new HashSet<>();
-            for (Item i : items) {
+            for (Item i : items) 
                 set.add(i.getClass());
-            }
             List<Class<?>> list = new ArrayList<>(set);
             return Collections.unmodifiableList(list);
         }
